@@ -32,8 +32,15 @@ if (yoga.toLowerCase() === 'y' || yoga.toLowerCase() === 'yes') {
   alert('Ha! Tricked you. I might be avoidant of the lack of water for extended periods of time, but I actually love heat in controlled settings. Plus, with 90 minutes of that stuff, you\'re basically the source of your own personal lake. Moving on...');
 }
 
-var yoga = prompt(user + ', ');
-console.log('yogi? ', yoga);
+var iceAxe = prompt(user + ', how about whether I\'ve self-arrested down snow faces on mountains with an ice axe?');
+console.log('...self-arrest with ice axe? ', iceAxe);
+
+if (iceAxe.toLowerCase() === 'y' || iceAxe.toLowerCase() === 'yes') {
+  alert('OK I know I\'m getting lazy. But good guess nonetheless, although it was much less exciting than it sounds. Final question!');
+} else {
+  alert('OK I know I\'m getting lazy. I definitely have, although it was much less exciting than it sounds. Final question!');
+}
 
 //var g5 = prompt(user + ', ');
 //console.log()
+//'Thanks for taking some time to play the get to know me game! I\'m happy to return the favor. For now, here\'s a little extra info before we part ways. Goodbye!! :D <3'
