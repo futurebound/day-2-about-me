@@ -23,7 +23,7 @@ if (arizona.toLowerCase() === 'y' || arizona.toLowerCase() === 'yes') {
   alert('Good guess! I can\'t imagine how awful it would be to roast in the desert all day without AC or a big, airy home to keep me cool. OK! Round 3, this should get much easier shortly.');
 }
 
-var yoga = prompt(user + ', based off what you learned last time, do you thnk I\'m one to enjoy 105+ Farenheit hatha yoga?');
+var yoga = prompt(user + ', based off what you learned last time, do you think I\'m one to enjoy 105+ Farenheit hatha yoga?');
 console.log('yogi? ', yoga);
 
 if (yoga.toLowerCase() === 'y' || yoga.toLowerCase() === 'yes') {
