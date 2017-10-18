@@ -88,6 +88,7 @@ while (birthday !== 13 && counter < 4) {
     alert('Nope! Too low c:');
   } else if (birthday > 13) {
     alert('Nope! Too high c:');
+    // ADD IN ANOTHER TO CHECK IF THERE ANSWER IS NaN or null and prompt to
   }
 }
 
@@ -97,4 +98,8 @@ if (flag === true) {
   alert('Out of guesses! Nice try, your odds were pretty awful anyways.');
 }
 
+alert('OK! One last question. This is a little more difficult than the others, so you get 6 total guesses. There are a couple correct answers, however. The question is...');
+
+var travel = ['cabo', 'cabo san lucas', 'cancun', 'tulum', ]
 // 7th question
+for (travel.toLowerCase())
