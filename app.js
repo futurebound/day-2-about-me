@@ -41,6 +41,7 @@ if (iceAxe.toLowerCase() === 'y' || iceAxe.toLowerCase() === 'yes') {
   alert('OK I know I\'m getting lazy. I definitely have, although it was much less exciting than it sounds. Final question!');
 }
 
-//var g5 = prompt(user + ', ');
-//console.log()
-//'Thanks for taking some time to play the get to know me game! I\'m happy to return the favor. For now, here\'s a little extra info before we part ways. Goodbye!! :D <3'
+var entity = prompt(user + ', last but not least, am I a digital entity?');
+console.log('entity: ', entity);
+
+alert('Whoops another trick. I have no idea! Do you? c; Thanks for taking some time to play the get to know me game! I\'m happy to return the favor. For now, here\'s a little extra info before we part ways. Goodbye!! :D <3');
