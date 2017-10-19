@@ -120,5 +120,7 @@ while (guesses < 6) {
 }
 
 if (correct === true) {
-  alert('Out of guesses! They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
+  alert('WOW nice job! They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
+} else {
+  alert('EHHH out of guesses. They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
 }
