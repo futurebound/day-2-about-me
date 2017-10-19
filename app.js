@@ -1,7 +1,7 @@
 'use strict';
 
 // getting user name
-var user = prompt('Welcome, freind! I appreciate that you have an interest in myself. Would you be so kind as to share your name?');
+var user = prompt('Welcome, friend! I appreciate that you have an interest in myself. Would you be so kind as to share your name?');
 console.log('user name:', user);
 
 // validation of user name entry
@@ -71,7 +71,7 @@ alert ('I\'d like to test your 6th sense now... Tune into my vibration as well a
 // declaring variables for upcoming loop
 var birthday;
 var counter = 0;
-var flag = false;
+var flag = true;
 
 // while loop to give user 4 chances
 while (birthday !== 13 && counter < 4) {
@@ -82,7 +82,7 @@ while (birthday !== 13 && counter < 4) {
 
   // if loop that determines whether the guess was higher/lower or correct (which breaks loop)
   if (birthday === 13) {
-    flag = true;
+    flag = false;
     break;
   } else if (birthday < 13) {
     alert('Nope! Too low c:');
@@ -92,7 +92,7 @@ while (birthday !== 13 && counter < 4) {
   }
 }
 
-if (flag === true) {
+if (flag === false) {
   alert('Congrats, you got it! I\'m no guru but your 3rd eye might be open!');
 } else {
   alert('Out of guesses! Nice try, your odds were pretty awful anyways.');
@@ -100,6 +100,25 @@ if (flag === true) {
 
 alert('OK! One last question. This is a little more difficult than the others, so you get 6 total guesses. There are a couple correct answers, however. The question is...');
 
-var travel = ['cabo', 'cabo san lucas', 'cancun', 'tulum', ]
-// 7th question
-for (travel.toLowerCase())
+// 7th question variables
+var cities = ['cabo san lucas', 'cancun', 'tulum', 'mexico city', 'tijuana'];
+var response;
+var guesses = 0;
+var correct = false;
+
+while (guesses < 6) {
+  response = prompt('What\'s a city in Mexico that I\'ve visited?');
+  console.log('response:', response);
+  if (cities.includes(response.toLowerCase())) {
+    alert('Wow you got it! They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
+    correct = true;
+    break;
+  } else {
+    alert('Nope! Guess again.');
+    guesses++;
+  }
+}
+
+if (correct === true) {
+  alert('Out of guesses! They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
+}
