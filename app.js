@@ -1,13 +1,6 @@
 'use strict';
 
-// // getting user name
-// var user = prompt('Welcome, friend! I appreciate that you have an interest in myself. Would you be so kind as to share your name?');
-// console.log('user name:', user);
-//
-// // validation of user name entry
-// alert('Good to know you, ' + user + ' c: I\'ve got an idea. On a whim, I feel like sharing a little bit about me since you took the time to come here. I\'m partial to games though, so please humor me and make a couple guesses. To keep it easier on us both for now, these will all be yes or no questions. Please answer accordingly!');
-
-var counter = 0;
+var guessedCorrect = 0;
 
 function question1(){
   // first question
@@ -17,6 +10,7 @@ function question1(){
   // validation that runs if user enters y/yes
   if (lodging.toLowerCase() === 'y' || lodging.toLowerCase() === 'yes') {
     alert('Correct! Lucky or perceptive? I guess we\'ll find out shortly... Round 2!');
+    guessedCorrect++;
 
   // validation that runs if user enters anything else
   } else {
@@ -36,6 +30,7 @@ function question2(){
   // Q2 validation that runs if user enters anything else
   } else {
     alert('Good guess! I can\'t imagine how awful it would be to roast in the desert all day without AC or a big, airy home to keep me cool. OK! Round 3, this should get much easier shortly.');
+    guessedCorrect++;
   }
 }
 
@@ -47,6 +42,7 @@ function question3(){
   // 3rd question validation if user enters y or yes
   if (yoga.toLowerCase() === 'y' || yoga.toLowerCase() === 'yes') {
     alert('Nice! I tried to trick you there, but you\'re apparently not one to be fooled so easily. Moving on...');
+    guessedCorrect++;
 
   // Q3 validation that runs if user enters anything else
   } else {
@@ -62,6 +58,7 @@ function question4(){
   // 4th question validation if user enters y or yes
   if (iceAxe.toLowerCase() === 'y' || iceAxe.toLowerCase() === 'yes') {
     alert('Ooh, you knew I was a purely rectreational mountaineer?? Good guess, although it was much less exciting than it sounds. Final question!');
+    guessedCorrect++;
 
   // 4th question validation if user enters anything else
   } else {
@@ -73,15 +70,13 @@ function question5(){
   // 5th question
   var entity = prompt(user + ', this might sound strange, but am I a digital entity?');
   console.log('entity: ', entity);
+  guessedCorrect++;
 
   // 5th question response regardless of input
-  alert('Whoops another trick. I have no idea! Do you? c; Moving on... These next few questions are going to shift away from Y/N.');
+  alert('You\'re correct!! :D What gave me away?? Moving on... These next few questions are going to shift away from Y/N.');
 }
 
-//alert ('I\'d like to test your 6th sense now... Tune into my vibration as well as you are able. I\'m going to give you four guesses to determine which day of the month I was born. It was in August if that makes it easier to feel. Relax, I\'ll give you some hints too :]');
-
 // declaring variables for upcoming loop
-
 function question6(){
 
   var birthday;
@@ -109,13 +104,13 @@ function question6(){
 
   if (answer6 === true) {
     alert('Congrats, you got it! I\'m no guru but your 3rd eye might be open!');
+    guessedCorrect++;
   } else {
     alert('Out of guesses! Nice try, your odds were pretty awful anyways.');
   }
 }
 
-//alert('OK! One last question. This is a little more difficult than the others, so you get 6 total guesses. There are a couple correct answers, however. The question is...');
-
+// question7
 function question7(){
   // 7th question variables
   var cities = ['cabo san lucas', 'cancun', 'tulum', 'mexico city', 'tijuana'];
@@ -137,6 +132,7 @@ function question7(){
 
   if (correct === true) {
     alert('WOW nice job! They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
+    guessedCorrect++;
   } else {
     alert('EHHH out of guesses. They were all tourist destinations FYI. The possible answers were Cabo (san lucas), Cancun, and Tulum.');
   }
@@ -159,4 +155,4 @@ alert ('I\'d like to test your 6th sense now... Tune into my vibration as well a
 question6();
 alert('OK! One last question. This is a little more difficult than the others, so you get 6 total guesses. There are a couple correct answers, however. The question is...');
 question7();
-alert ('Thanks for stopping by and playing some pointless games with me. Just FYI, you got ' + counter + ' out of 7 questions correct. As another pointless gift from me to you, here\'s a page with more than enough personal information for one day. Love you friend, be well!');
+alert ('Thanks for stopping by and playing some pointless games with me. Just FYI, you got ' + guessedCorrect + ' out of 7 questions correct. As another pointless gift from me to you, here\'s a page with more than enough personal information for one day. Love you friend, be well!');

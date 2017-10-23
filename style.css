@@ -14,24 +14,24 @@ h3 {
 }
 
 img {
-  border: 3px dashed orange;
+  border: 7px solid black;
   margin: 12px;
 }
 
-p {
-  color: green;
+#foxes {
+  color: white;
   font-style: bold;
-}
-
-#kartikeya {
-  height: 333px;
 }
 
 main section {
   background-image: url("http://www.witness-this.com/content/uploads/2015/10/Electric_Love.jpg");
-  height: 400px;
+  height: 480px;
 }
 
 html {
   background-color: #7f8c8d;
+}
+
+li {
+  color: white;
 }
