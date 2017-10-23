@@ -7,6 +7,8 @@
 // // validation of user name entry
 // alert('Good to know you, ' + user + ' c: I\'ve got an idea. On a whim, I feel like sharing a little bit about me since you took the time to come here. I\'m partial to games though, so please humor me and make a couple guesses. To keep it easier on us both for now, these will all be yes or no questions. Please answer accordingly!');
 
+var counter = 0;
+
 function question1(){
   // first question
   var lodging = prompt(user + ', do you feel that I\'d be interested in living out of a converted van or tiny home?');
@@ -59,21 +61,21 @@ function question4(){
 
   // 4th question validation if user enters y or yes
   if (iceAxe.toLowerCase() === 'y' || iceAxe.toLowerCase() === 'yes') {
-    alert('OK I know I\'m getting lazy. But good guess nonetheless, although it was much less exciting than it sounds. Final question!');
+    alert('Ooh, you knew I was a purely rectreational mountaineer?? Good guess, although it was much less exciting than it sounds. Final question!');
 
   // 4th question validation if user enters anything else
   } else {
-    alert('OK I know I\'m getting lazy. I definitely have, although it was much less exciting than it sounds. Final question!');
+    alert('Come on, you didn\'t assume I was a purely rectreational mountaineer? I definitely have, although it was much less exciting than it sounds. Final question!');
   }
 }
 
 function question5(){
   // 5th question
-  var entity = prompt(user + ', last but not least, am I a digital entity?');
+  var entity = prompt(user + ', this might sound strange, but am I a digital entity?');
   console.log('entity: ', entity);
 
   // 5th question response regardless of input
-  alert('Whoops another trick. I have no idea! Do you? c; Thanks for taking some time to play the get to know me game! I\'m happy to return the favor. For now, here\'s a little extra info before we part ways. Goodbye!! :D <3');
+  alert('Whoops another trick. I have no idea! Do you? c; Moving on... These next few questions are going to shift away from Y/N.');
 }
 
 //alert ('I\'d like to test your 6th sense now... Tune into my vibration as well as you are able. I\'m going to give you four guesses to determine which day of the month I was born. It was in August if that makes it easier to feel. Relax, I\'ll give you some hints too :]');
@@ -88,7 +90,7 @@ function question6(){
 
   // while loop to give user 4 chances
   while (birthday !== 13 && counter < 4) {
-    birthday = parseInt(prompt('What day of the month was I born?'));
+    birthday = parseInt(prompt('What day of the month was I born? I\'ll give you 4 guesses!'));
     counter++;
     console.log('guessed: ', birthday);
     console.log('guess #: ', counter);
@@ -157,3 +159,4 @@ alert ('I\'d like to test your 6th sense now... Tune into my vibration as well a
 question6();
 alert('OK! One last question. This is a little more difficult than the others, so you get 6 total guesses. There are a couple correct answers, however. The question is...');
 question7();
+alert ('Thanks for stopping by and playing some pointless games with me. Just FYI, you got ' + counter + ' out of 7 questions correct. As another pointless gift from me to you, here\'s a page with more than enough personal information for one day. Love you friend, be well!');
